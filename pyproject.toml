@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "later-test"
+version = "0.1.0"
+description = ""
+authors = ["Mamad <mkajbaf@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.4"
+jupyter = "^1.0.0"
+pyspark = "~3.3.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

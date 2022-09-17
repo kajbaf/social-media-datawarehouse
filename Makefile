@@ -9,3 +9,9 @@ stop:
 
 fullstop:
 	docker compose down -v
+
+install:
+	poetry install
+
+run:
+	poetry run jupyter notebook  --no-browser
