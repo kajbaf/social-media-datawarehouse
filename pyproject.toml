@@ -11,7 +11,7 @@ jupyter = "~1.0.0"
 pyspark = "~3.3.0"
 
 [tool.poetry.group.dev.dependencies]
-black = "^22.8.0"
+black = {extras = ["jupyter", "toml"], version = "^22.8.0"}
 isort = "^5.10.1"
 flake8 = "^5.0.4"
 mypy = "^0.971"
@@ -19,3 +19,6 @@ mypy = "^0.971"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 160
