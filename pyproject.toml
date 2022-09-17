@@ -7,8 +7,14 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "3.10.4"
-jupyter = "^1.0.0"
+jupyter = "~1.0.0"
 pyspark = "~3.3.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^22.8.0"
+isort = "^5.10.1"
+flake8 = "^5.0.4"
+mypy = "^0.971"
 
 [build-system]
 requires = ["poetry-core"]
